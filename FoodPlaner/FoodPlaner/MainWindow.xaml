@@ -1,0 +1,27 @@
+﻿<Window x:Class="FoodPlaner.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FoodPlaner"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button Content="Lav Madplan" HorizontalAlignment="Left" Margin="67,365,0,0" VerticalAlignment="Top" Width="97" Click="Button_Click"/>
+        <Button Name="ButtonInkøb" Content="Lav Inkøbsliste" HorizontalAlignment="Left" Margin="190,365,0,0" VerticalAlignment="Top" Width="122" Click="Button_Click_1" IsEnabled="False"/>
+        <Label Content="mandag" HorizontalAlignment="Left" Margin="67,94,0,0" VerticalAlignment="Top"/>
+        <Label Content="tirsdag" HorizontalAlignment="Left" Margin="162,94,0,0" VerticalAlignment="Top"/>
+        <Label Content="onsdag" HorizontalAlignment="Left" Margin="263,94,0,0" VerticalAlignment="Top"/>
+        <Label Content="torsdag" HorizontalAlignment="Left" Margin="363,94,0,0" VerticalAlignment="Top"/>
+        <Label Content="fredag" HorizontalAlignment="Left" Margin="464,94,0,0" VerticalAlignment="Top"/>
+        <Label Name ="Labelmandag"  Content="" HorizontalAlignment="Left" Margin="82,133,0,0" VerticalAlignment="Top"/>
+        <Label x:Name ="Labeltirsdag"  Content="" HorizontalAlignment="Left" Margin="162,133,0,0" VerticalAlignment="Top"/>
+        <Label x:Name ="Labelonsdag"  Content="" HorizontalAlignment="Left" Margin="263,133,0,0" VerticalAlignment="Top"/>
+        <Label x:Name ="Labeltorsdag"  Content="" HorizontalAlignment="Left" Margin="376,133,0,0" VerticalAlignment="Top"/>
+        <Label x:Name ="Labelfredag"  Content="" HorizontalAlignment="Left" Margin="464,133,0,0" VerticalAlignment="Top"/>
+
+
+
+    </Grid>
+</Window>
+
