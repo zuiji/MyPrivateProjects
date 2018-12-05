@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Web;
 using System.Web.Mvc;
 using Vidly.Models;
@@ -15,6 +16,11 @@ namespace Vidly.Controllers
             var movie = new Movie (){Name = "Shrek!"};
            return View(movie);
           
+        }
+
+        public ActionResult Edit(int id)
+        {
+            return Content("id=" + id);
         }
     }
 }
