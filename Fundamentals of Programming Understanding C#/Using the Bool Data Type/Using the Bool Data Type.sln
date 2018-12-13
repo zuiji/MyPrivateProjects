@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Using the Bool Data Type", "Using the Bool Data Type\Using the Bool Data Type.csproj", "{327C57F5-3507-4A25-92BC-56115A7ADC51}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{327C57F5-3507-4A25-92BC-56115A7ADC51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{327C57F5-3507-4A25-92BC-56115A7ADC51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{327C57F5-3507-4A25-92BC-56115A7ADC51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{327C57F5-3507-4A25-92BC-56115A7ADC51}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E5477911-D30C-4180-B042-53B4F9C5AC46}
+	EndGlobalSection
+EndGlobal
