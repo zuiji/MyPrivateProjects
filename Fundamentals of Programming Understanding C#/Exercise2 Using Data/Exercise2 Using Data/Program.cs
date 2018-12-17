@@ -19,6 +19,17 @@ namespace Exercise2_Using_Data
          */
         static void Main(string[] args)
         {
+            const double per_square_foot = 5.50;
+
+            Console.WriteLine("Enther the length of your room");
+            double length = double.Parse(Console.ReadLine());
+            Console.WriteLine("Enter the width of your room");
+            double width = double.Parse(Console.ReadLine());
+
+            double area = length * width;
+            double price = area * per_square_foot;
+
+            Console.WriteLine("The Price to carpet this {0} by {1} room is {2}", length,width,price);
 
         }
     }
