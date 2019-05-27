@@ -49,7 +49,7 @@ namespace LottoSystem
         /// <summary>
         /// printing coupon
         /// </summary>
-        public void printCoupon()
+        public void PrintCoupon()
         {
             Console.WriteLine(this);
         }
@@ -57,7 +57,7 @@ namespace LottoSystem
         /// <summary>
         /// printing coupon with winner numbers highlighted
         /// </summary>
-        public void printWinnerNumbers()
+        public void PrintWinnerNumbers()
         {
             foreach (Row row in Rows)
             {
