@@ -9,7 +9,7 @@ namespace LottoSystem
         public static int WinnerPrize(List<int> correctNumber)
         {
             int prize = 0;
-            switch (correctNumber)
+            switch (correctNumber.Count)
             {
                 case 3:
                     prize = 125;

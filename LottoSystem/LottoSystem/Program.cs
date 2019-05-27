@@ -10,7 +10,7 @@ namespace LottoSystem
             LottoCoupon coupon = new LottoCoupon(10);
             coupon.PrintWinnerNumbers();
             Console.WriteLine(string.Join("\n",coupon.WinnerChecker()));
-            Console.WriteLine(Prize.PrintOutPrize(Prize.PrintOutPrize($"you did have{correntNumber} and did win {Prize.WinnerPrize(correntNumber)}")));
+            
             
             
             //Console.WriteLine("Your coupon numbers:\n");
