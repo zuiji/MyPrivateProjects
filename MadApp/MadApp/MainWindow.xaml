@@ -1,0 +1,29 @@
+﻿<Window x:Class="MadApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MadApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.DataContext>
+            <local:MainWindowViewModel/>
+        </Grid.DataContext>
+        <Button Content="Lav Madplan" HorizontalAlignment="Left" Margin="67,365,0,0" VerticalAlignment="Top" Width="97" Command="{Binding LavMadPlanButtonCommand}"/>
+        <Button Name="ButtonInkøb" Content="Lav Inkøbsliste" HorizontalAlignment="Left" Margin="190,365,0,0" VerticalAlignment="Top" Width="122" IsEnabled="{Binding EnableButtonIndKøb}" Command="{Binding LavIndKøbsListeCommand}"/>
+        <Label Content="mandag" HorizontalAlignment="Left" Margin="67,94,0,0" VerticalAlignment="Top"/>
+        <Label Content="tirsdag" HorizontalAlignment="Left" Margin="162,94,0,0" VerticalAlignment="Top"/>
+        <Label Content="onsdag" HorizontalAlignment="Left" Margin="263,94,0,0" VerticalAlignment="Top"/>
+        <Label Content="torsdag" HorizontalAlignment="Left" Margin="363,94,0,0" VerticalAlignment="Top"/>
+        <Label Content="fredag" HorizontalAlignment="Left" Margin="464,94,0,0" VerticalAlignment="Top"/>
+        <Label Name ="Labelmandag"  Content="{Binding Mandag}" HorizontalAlignment="Left" Margin="82,133,0,0" VerticalAlignment="Top"/>
+        <Label x:Name ="Labeltirsdag"  Content="{Binding Tirsdag}" HorizontalAlignment="Left" Margin="162,133,0,0" VerticalAlignment="Top"/>
+        <Label x:Name ="Labelonsdag"  Content="{Binding Onsdag}" HorizontalAlignment="Left" Margin="263,133,0,0" VerticalAlignment="Top"/>
+        <Label x:Name ="Labeltorsdag"  Content="{Binding Torsdag}" HorizontalAlignment="Left" Margin="376,133,0,0" VerticalAlignment="Top"/>
+        <Label x:Name ="Labelfredag"  Content="{Binding Fredag}" HorizontalAlignment="Left" Margin="464,133,0,0" VerticalAlignment="Top"/>
+
+
+
+    </Grid>
+</Window>
