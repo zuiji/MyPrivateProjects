@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Globalization;
 
 namespace LottoSystem
 {
@@ -10,9 +12,12 @@ namespace LottoSystem
             LottoCoupon coupon = new LottoCoupon(10);
             coupon.PrintWinnerNumbers();
             Console.WriteLine(string.Join("\n",coupon.WinnerChecker()));
-            
-            
-            
+            List<int> a = coupon.WinnerChecker();
+            Console.WriteLine(Prize.PrintOutPrize(a,Prize.WinnerPrize(a)));
+
+            Console.WriteLine($"You did win on  and had {a} on each row and your total: {Prize.WinnerPrize(a)}kr ");
+
+
             //Console.WriteLine("Your coupon numbers:\n");
             //foreach (int c in couponArray)
             //{
