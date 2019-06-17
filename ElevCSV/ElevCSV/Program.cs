@@ -6,10 +6,33 @@ using System.Threading.Tasks;
 
 namespace ElevCSV
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
+            List<Elev> elevList = new List<Elev>();
+            
+            //Elev elev = 
+            ElevInfoDataCapture EC = new ElevInfoDataCapture();
+            DataSaveLocationAndFileType ds = new DataSaveLocationAndFileType();
+            char inputFromUser = '0';
+            do
+            {Console.Clear();
+
+
+                EC.ElevCapture();
+                elevList.Add(EC);
+
+                ds.CreateCVSFile(EC.ElevCapture());
+
+                Console.WriteLine("Want to Add another student?: ");
+                
+                Console.WriteLine("2) no");
+                inputFromUser = Console.ReadKey(true).KeyChar;
+
+                
+            } while (inputFromUser != '2');
+
         }
     }
 }
