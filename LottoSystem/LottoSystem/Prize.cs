@@ -6,13 +6,12 @@ namespace LottoSystem
 {
     public static class Prize
     {
-        public static int WinnerPrize(List<int> correctNumber)
+        public static int WinnerPrize(int correctNumber)
         {
             int prize = 0;
-            foreach (var item in correctNumber)
-            {
+       
 
-                switch (item)
+                switch (correctNumber)
                 {
                     case 3:
                         prize = 125;
@@ -32,19 +31,35 @@ namespace LottoSystem
 
                 }
 
-            }
+            
             return prize;
 
 
         }
 
-        public static string PrintOutPrize(List<int> correctNumber, int prize)
+        public static string PrintOutPrize(List<int> correctNumber)
         {
             string text = "";
+            int totalprize = 0;
 
-            if (prize > 0)
+            for (int index = 0; index < correctNumber.Count; index++)
             {
-                text = $"Hurray you had {correctNumber} correct numbers and did win {prize}kr.";
+                int number = correctNumber[index];
+                var prize = WinnerPrize(number);
+                if (prize > 0)
+                {
+                    totalprize += prize;
+                    text += $"Hurray you had {number} correct numbers on row {index+01} and did win {prize}kr.\n";
+                }
+            }
+            if (totalprize > 0)
+            {
+                text += $"In total you won {totalprize}.";
+
+            }
+            else
+            {
+                text = "Unfortunately you won nothing.";
             }
 
             return text;

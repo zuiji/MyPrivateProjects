@@ -8,14 +8,21 @@ namespace LottoSystem
     {
         static void Main(string[] args)
         {
-            Generator.DrawWinnerNumbers();
-            LottoCoupon coupon = new LottoCoupon(10);
-            coupon.PrintWinnerNumbers();
-            Console.WriteLine(string.Join("\n",coupon.WinnerChecker()));
-            List<int> a = coupon.WinnerChecker();
-            Console.WriteLine(Prize.PrintOutPrize(a,Prize.WinnerPrize(a)));
+           
+                Generator.DrawWinnerNumbers();
+                LottoCoupon coupon = new LottoCoupon(10);
+                coupon.PrintWinnerNumbers();
+              //  Console.WriteLine(string.Join("\n",coupon.WinnerChecker()));
+                List<int> a = coupon.WinnerChecker();
 
-            Console.WriteLine($"You did win on  and had {a} on each row and your total: {Prize.WinnerPrize(a)}kr ");
+                Console.WriteLine();
+                Console.WriteLine(Prize.PrintOutPrize(a));
+                Console.WriteLine();
+                Console.WriteLine();
+                Console.WriteLine();
+                Console.WriteLine();
+
+            
 
 
             //Console.WriteLine("Your coupon numbers:\n");

@@ -8,20 +8,22 @@ using System.Xml.Serialization;
 
 namespace ElevCSV
 {
-    public class DataSaveLocationAndFileType
+    public static class DataSaveLocationAndFileType
     {
-        public void CreateCVSFile(Elev elev
-        )
+        public static void CreateCVSFile(List<Student> students)
         {
           
             // Build the file content
             var csv = new StringBuilder();
+            foreach (var student in students)
+            {
 
-           var newLine = string.Format("{0},{1},{2},{3},{4},{5},{6},{7},{8}", elev.FirstName, elev.LastName, elev.CprNr, elev.PhoneNumber, elev.Email, elev.EUX, elev.Direction, elev.GfSchool, elev.WantedSkpLocation);
-            csv.AppendLine(newLine);
+                var newLine = string.Format("{0};{1};{2};{3};{4};{5};{6};{7};{8}", student.FirstName, student.LastName, student.CprNr, student.PhoneNumber, student.Email, student.EUX, student.Direction, student.GfSchool, student.WantedSkpLocation);
+                csv.AppendLine(newLine);
 
+            }
            
-            File.WriteAllText(@Environment.GetFolderPath(Environment.SpecialFolder.Desktop), csv.ToString());
+            File.WriteAllText(Environment.GetFolderPath(Environment.SpecialFolder.Desktop)+"\\elevdata.csv", csv.ToString());
         }
     }
 }

@@ -7,39 +7,83 @@ using System.Threading.Tasks;
 
 namespace ElevCSV
 {
-    public class ElevInfoDataCapture
+    public static class ElevInfoDataCapture
     {
 
-        public Elev ElevCapture()
+        public static Student ElevCapture()
         {
             
-            Elev output = new Elev();
+            Student output = new Student();
             Console.WriteLine("What is your Firstname");
-            output.FirstName = Console.ReadLine();
+            try
+            {
+                output.FirstName = Console.ReadLine();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+            }
 
             Console.WriteLine("What is your Lastname");
-            output.LastName = Console.ReadLine();
+            try
+            {
+                output.LastName = Console.ReadLine();
+            }
+
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+            }
 
             Console.WriteLine("What is your CPR-nr");
-            output.CprNr = Console.ReadLine();
+            try
+            {
+                output.CprNr = Console.ReadLine();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+            }
 
             Console.WriteLine("What is your Email");
-            output.Email = Console.ReadLine();
+            try
+            {
+                output.Email = Console.ReadLine();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+            }
 
             Console.WriteLine("What is your Mobile Number");
-            output.PhoneNumber = Console.ReadLine();
+            try
+            {
+                output.PhoneNumber = Console.ReadLine();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+            }
 
             Console.WriteLine("Where did you take your GF2");
-            output.GfSchool = Console.ReadLine();
+            try
+            {
+                output.GfSchool = Console.ReadLine();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+            }
 
             Console.WriteLine("What education direction do you want to go");
             output.Direction = Console.ReadLine();
-
+           
             Console.WriteLine("Are you EUX");
             output.EUX = Console.ReadLine();
-
+         
             Console.WriteLine("What is your wanted SKP Location?");
             output.WantedSkpLocation = Console.ReadLine();
+       
             return output;
 
         }

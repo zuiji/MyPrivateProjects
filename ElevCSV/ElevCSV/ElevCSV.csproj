@@ -46,7 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataSaveLocationAndFileType.cs" />
-    <Compile Include="Elev.cs" />
+    <Compile Include="Student.cs" />
     <Compile Include="ElevInfoDataCapture.cs" />
     <Compile Include="Gui.cs">
       <SubType>Form</SubType>
