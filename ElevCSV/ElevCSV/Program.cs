@@ -17,7 +17,7 @@ namespace ElevCSV
             {
                 Console.Clear();
                 
-                students.Add(ElevInfoDataCapture.ElevCapture());
+                students.Add(StudentInfoDataCapture.ElevCapture());
                 
                 Console.WriteLine("Want to Add another student?: ");
 

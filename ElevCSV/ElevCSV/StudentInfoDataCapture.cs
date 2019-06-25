@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ElevCSV
 {
-    public static class ElevInfoDataCapture
+    public static class StudentInfoDataCapture
     {
 
         public static Student ElevCapture()
