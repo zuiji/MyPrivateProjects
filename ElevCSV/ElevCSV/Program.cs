@@ -11,27 +11,27 @@ namespace ElevCSV
         static void Main(string[] args)
         {
             List<Elev> elevList = new List<Elev>();
-            
+
             //Elev elev = 
             ElevInfoDataCapture EC = new ElevInfoDataCapture();
             DataSaveLocationAndFileType ds = new DataSaveLocationAndFileType();
             char inputFromUser = '0';
             do
-            {Console.Clear();
+            {
+                Console.Clear();
 
 
-                EC.ElevCapture();
-                elevList.Add(EC);
+               // EC.ElevCapture();
+                elevList.Add(EC.ElevCapture());
 
-                ds.CreateCVSFile(EC.ElevCapture());
 
                 Console.WriteLine("Want to Add another student?: ");
-                
-                Console.WriteLine("2) no");
+
+                Console.WriteLine("1) no");
                 inputFromUser = Console.ReadKey(true).KeyChar;
 
-                
-            } while (inputFromUser != '2');
+
+            } while (inputFromUser != '1');
 
         }
     }
