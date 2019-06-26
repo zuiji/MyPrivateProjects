@@ -76,7 +76,7 @@ namespace ElevCSV
             }
 
             Console.WriteLine("What education direction do you want to go");
-            output.Direction = Console.ReadLine();
+            output.EducationDirection = Console.ReadLine();
            
             Console.WriteLine("Are you EUX");
             output.EUX = Console.ReadLine();

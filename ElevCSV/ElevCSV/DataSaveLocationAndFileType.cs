@@ -18,7 +18,7 @@ namespace ElevCSV
             foreach (var student in students)
             {
 
-                var newLine = string.Format("{0};{1};{2};{3};{4};{5};{6};{7};{8}", student.FirstName, student.LastName, student.CprNr, student.PhoneNumber, student.Email, student.EUX, student.Direction, student.GfSchool, student.WantedSkpLocation);
+                var newLine = string.Format("{0};{1};{2};{3};{4};{5};{6};{7};{8}", student.FirstName, student.LastName, student.CprNr, student.PhoneNumber, student.Email, student.EUX, student.EducationDirection, student.GfSchool, student.WantedSkpLocation);
                 csv.AppendLine(newLine);
 
             }

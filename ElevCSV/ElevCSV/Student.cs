@@ -119,7 +119,7 @@ namespace ElevCSV
                 {
                     throw new ArgumentException("The Phone number is invalid");
                 }
-                
+
             }
         }
         public string SpecialInfo
@@ -142,8 +142,37 @@ namespace ElevCSV
         public string EUX { get; set; }
         public string WantedSkpLocation { get; set; }
         public string GfSchool { get; set; }
-        public string Direction { get; set; }
+        public string EducationDirection { get; set; }
 
+        //enum eux
+        //{
+        //    ja,
+        //    nej
+        //}
 
+        //enum wantedSkpLocation
+        //{
+        //    Slagelse,
+        //    Roskilde,
+        //    Ringsted,
+        //    Vordingborg
+        //}
+
+        //enum GFSchool
+        //{
+        //    Køge,
+        //    Ringsted,
+        //    Roskilde,
+        //    Slagelse,
+        //    Vordingborg
+        //}
+
+        //enum educationDirection
+        //{
+        //    ITSupporter,
+        //    DatateknikerMedSpecialeIProgrammering,
+        //    DatateknikerMedSpecialeIInfrastruktur
+        //}
+       
     }
 }
