@@ -16,14 +16,18 @@ namespace ElevCSV
             do
             {
                 Console.Clear();
-                
+
                 students.Add(StudentInfoDataCapture.ElevCapture());
-                
+
+                Console.WriteLine();
+                Console.WriteLine("Press enter to continue");
+                Console.ReadLine();
                 Console.WriteLine("Want to Add another student?: ");
 
                 Console.WriteLine("1) no");
+
                 inputFromUser = Console.ReadKey(true).KeyChar;
-                
+
             } while (inputFromUser != '1');
             DataSaveLocationAndFileType.CreateCVSFile(students);
         }

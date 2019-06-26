@@ -12,7 +12,7 @@ namespace ElevCSV
 
         public static Student ElevCapture()
         {
-            
+
             Student output = new Student();
             Console.WriteLine("What is your Firstname");
             try
@@ -77,13 +77,13 @@ namespace ElevCSV
 
             Console.WriteLine("What education direction do you want to go");
             output.EducationDirection = Console.ReadLine();
-           
+
             Console.WriteLine("Are you EUX");
             output.EUX = Console.ReadLine();
-         
+
             Console.WriteLine("What is your wanted SKP Location?");
             output.WantedSkpLocation = Console.ReadLine();
-       
+
             return output;
 
         }

@@ -12,7 +12,7 @@ namespace ElevCSV
     {
         public static void CreateCVSFile(List<Student> students)
         {
-          
+
             // Build the file content
             var csv = new StringBuilder();
             foreach (var student in students)
@@ -22,8 +22,8 @@ namespace ElevCSV
                 csv.AppendLine(newLine);
 
             }
-           
-            File.WriteAllText(Environment.GetFolderPath(Environment.SpecialFolder.Desktop)+"\\elevdata.csv", csv.ToString());
+
+            File.WriteAllText(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\elevdata.csv", csv.ToString());
         }
     }
 }
