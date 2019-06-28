@@ -15,65 +15,23 @@ namespace ElevCSV
 
             Student output = new Student();
             Console.WriteLine("What is your Firstname");
-            try
-            {
-                output.FirstName = Console.ReadLine();
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e);
-            }
+            output.FirstName = Console.ReadLine();
 
             Console.WriteLine("What is your Lastname");
-            try
-            {
-                output.LastName = Console.ReadLine();
-            }
+            output.LastName = Console.ReadLine();
 
-            catch (Exception e)
-            {
-                Console.WriteLine(e);
-            }
 
             Console.WriteLine("What is your CPR-nr");
-            try
-            {
-                output.CprNr = Console.ReadLine();
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e);
-            }
+            output.CprNr = Console.ReadLine();
 
             Console.WriteLine("What is your Email");
-            try
-            {
-                output.Email = Console.ReadLine();
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e);
-            }
+            output.Email = Console.ReadLine();
 
             Console.WriteLine("What is your Mobile Number");
-            try
-            {
-                output.PhoneNumber = Console.ReadLine();
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e);
-            }
+            output.PhoneNumber = Console.ReadLine();
 
             Console.WriteLine("Where did you take your GF2");
-            try
-            {
-                output.GfSchool = Console.ReadLine();
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e);
-            }
+            output.GfSchool = Console.ReadLine();
 
             Console.WriteLine("What education direction do you want to go");
             output.EducationDirection = Console.ReadLine();
